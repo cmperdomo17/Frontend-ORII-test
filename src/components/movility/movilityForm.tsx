@@ -223,7 +223,6 @@ export function MovilityForm({
             <div className="flex items-center gap-3">
               <Plane className="h-6 w-6 text-blue" />
               <CardTitle className="text-blueDark text-2xl">
-                {/* {role === "ADMIN" ? "Soy admin" : "No soy admin"} */}
                 {isEditing ? "Edición de Movilidad" : "Registro de Movilidad"}
               </CardTitle>
             </div>

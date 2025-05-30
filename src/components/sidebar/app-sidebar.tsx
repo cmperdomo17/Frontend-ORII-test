@@ -38,55 +38,57 @@ interface NavItem {
   roles?: UserRole[];
 }
 
+const BASE_PATH = "/dashboard";
+
 const data = {
   navMain: [
     {
       title: "Inicio",
-      url: "/orii-front/dashboard/home",
+      url: `${BASE_PATH}/home`,
       icon: Home,
       isActive: true,
-      items: [{ title: "Acerca de ORII", url: "/orii-front/dashboard/home" }],
+      items: [{ title: "Acerca de ORII", url: `${BASE_PATH}/home` }],
       roles: ["SU", "ADMIN", "USER"],
     },
     {
       title: "Convenios",
-      url: "/orii-front/dashboard/agreements",
+      url: `${BASE_PATH}/agreements`,
       icon: Globe,
       items: [
-        { title: "Listar convenios", url: "/orii-front/dashboard/agreements" },
-        { title: "Crear convenio", url: "/orii-front/dashboard/agreements/create", roles: ["ADMIN"] },
+        { title: "Listar convenios", url: `${BASE_PATH}/agreements` },
+        { title: "Crear convenio", url: `${BASE_PATH}/agreements/create`, roles: ["ADMIN"] },
       ],
       roles: ["ADMIN", "USER"],
     },
     {
       title: "Movilidad",
-      url: "/orii-front/dashboard/movility",
+      url: `${BASE_PATH}/movility`,
       icon: PlaneTakeoff,
       items: [
-        { title: "Listar movilidades", url: "/orii-front/dashboard/movility" },
-        { title: "Crear movilidad", url: "/orii-front/dashboard/movility/create" },
+        { title: "Listar movilidades", url: `${BASE_PATH}/movility` },
+        { title: "Crear movilidad", url: `${BASE_PATH}/movility/create` },
       ],
       roles: ["ADMIN", "USER"],
     },
     {
       title: "Estadisticas",
-      url: "/orii-front/dashboard/statistics",
+      url: `${BASE_PATH}/statistics`,
       icon: ChartColumnIncreasing,
-      items: [{ title: "Gráficos", url: "/orii-front/dashboard/statistics" }],
+      items: [{ title: "Gráficos", url: `${BASE_PATH}/statistics` }],
       roles: ["ADMIN", "USER"],
     },
     {
       title: "Gestión de usuarios",
-      url: "/orii-front/dashboard/users",
+      url: `${BASE_PATH}/users`,
       icon: UserCog,
-      items: [{ title: "Registrar usuario", url: "/orii-front/dashboard/users/create" }],
+      items: [{ title: "Registrar usuario", url: `${BASE_PATH}/users/create` }],
       roles: ["SU"],
     },
     {
       title: "Gestión de enlaces",
-      url: "/orii-front/dashboard/users",
+      url: `${BASE_PATH}/users`,
       icon: UserCog,
-      items: [{ title: "Registrar enlace", url: "/orii-front/dashboard/users/create" }],
+      items: [{ title: "Registrar enlace", url: `${BASE_PATH}/users/create` }],
       roles: ["ADMIN"],
     },
   ] as NavItem[],

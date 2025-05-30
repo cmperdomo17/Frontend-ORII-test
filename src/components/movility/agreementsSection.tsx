@@ -63,7 +63,7 @@ export function AgreementsSection({
     };
 
     return (
-        <div className="bg-gray-100 p-4 rounded-md">
+        <div className="p-4 rounded-md">
             <h2 className="text-2xl font-bold text-blue">Convenios y patrocinios</h2>
             <hr className="my-4 border-gray-300" />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
