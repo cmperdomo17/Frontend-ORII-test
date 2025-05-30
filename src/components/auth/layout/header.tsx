@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <div className="flex items-center gap-2">
             <Image
-                src="/orii-front/logos/u blue.png"
+                src="/logos/u blue.png"
                 alt="Logo"
                 width={50}
                 height={50}

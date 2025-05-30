@@ -86,7 +86,7 @@ export async function middleware(request: NextRequest) {
 
     // Redireccionar a login si no hay token
     if (!token) {
-        return NextResponse.redirect(new URL("/orii-front", request.url));
+        return NextResponse.redirect(new URL("/", request.url));
     }
 
     try {
@@ -100,13 +100,13 @@ export async function middleware(request: NextRequest) {
 
         // Verificar acceso a la ruta según el rol
         if (!hasAccessToRoute(url, userRole)) {
-            return NextResponse.redirect(new URL("/orii-front/forbidden", request.url));
+            return NextResponse.redirect(new URL("/forbidden", request.url));
         }
 
         return NextResponse.next();
     } catch (error) {
         console.error("Error en middleware:", error);
-        return NextResponse.redirect(new URL("/orii-front", request.url));
+        return NextResponse.redirect(new URL("/", request.url));
     }
 }
 

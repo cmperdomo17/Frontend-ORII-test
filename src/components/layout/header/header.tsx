@@ -17,7 +17,7 @@ export default function Header() {
     const user = userSession ? {
         name: `${userSession.name || ""} ${userSession.lastname || ""}`,
         email: userSession.sub || "",
-        avatar: "/orii-front/img/user.webp"
+        avatar: "/img/user.webp"
     } : {
         name: "",
         email: "",
