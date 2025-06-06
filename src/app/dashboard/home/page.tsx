@@ -32,7 +32,7 @@ export default function Home() {
                     />
                 </div>
 
-                <div className="relative z-10 grid gap-2 lg:grid-cols-2 px-8 py-16 md:px-12 lg:px-18 lg:py-20">
+                <div className="relative z-10 grid gap-10 md:gap-2 lg:grid-cols-2 px-8 py-16 md:px-12 lg:px-18 lg:py-20">
                     <div className="flex flex-col gap-8 lg:gap-10 justify-center">
                         <AnimatedSplitText
                             text="Oficina de Relaciones Interinstitucionales e Internacionales"
@@ -495,7 +495,7 @@ export default function Home() {
                                         {/* Main logo container */}
                                         <div className="relative bg-blueTertiary rounded-full p-8 group-hover:transform group-hover:scale-105 transition-all duration-500">
                                             <Image
-                                                src="/orii-front/logos/UNICAUCA_ORII.webp"
+                                                src="/logos/UNICAUCA_ORII.webp"
                                                 alt="ORII - Oficina de Relaciones Internacionales"
                                                 width={280}
                                                 height={280}
