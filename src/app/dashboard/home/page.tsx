@@ -78,7 +78,7 @@ export default function Home() {
                             {/* Main image container */}
                             <div className="absolute inset-8 overflow-hidden rounded-full border-4 border-white shadow-2xl shadow-white/20 bg-blue/20 backdrop-blur-sm">
                                 <Image
-                                    src="/orii-front/logos/UNICAUCA_ORII.webp"
+                                    src="/logos/UNICAUCA_ORII.webp"
                                     alt="ORII - Global education"
                                     fill
                                     className="object-cover transition-transform duration-500 hover:scale-105"
@@ -174,7 +174,7 @@ export default function Home() {
                                 <div className="absolute bottom-0 left-0 w-32 h-32 bg-blueSecondary/10 rounded-full translate-y-8 -translate-x-8"></div>
                                 <div className="relative z-10">
                                     <Image
-                                        src="/orii-front/img/home.webp"
+                                        src="/img/home.webp"
                                         alt="Movilidad Académica"
                                         width={300}
                                         height={300}

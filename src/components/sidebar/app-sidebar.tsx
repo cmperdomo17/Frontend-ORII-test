@@ -120,7 +120,7 @@ export const AppSidebar = React.memo(function AppSidebar({
       <SidebarHeader className="bg-blueDark text-white p-4 items-start">
         <div className="flex justify-between w-full">
           <Image
-            src={"/orii-front/logos/ORII.webp"}
+            src={"/logos/ORII.webp"}
             alt="Logo"
             width={150}
             height={150}

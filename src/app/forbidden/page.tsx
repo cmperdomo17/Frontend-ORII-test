@@ -49,7 +49,7 @@ export default function Forbidden() {
                     <CardContent className="pt-4 pb-2">
                         <div className="relative h-[180px] w-full mb-4">
                             <Image
-                                src="/orii-front/img/403.svg"
+                                src="/img/403.svg"
                                 fill
                                 alt="403 Forbidden"
                                 className="object-contain"
