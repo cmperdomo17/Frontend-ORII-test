@@ -1,8 +1,4 @@
 import { useRef, useEffect } from "react";
-import { Label } from "@/components/ui/typography/label";
-import { Input } from "@/components/ui/form/input";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/navigation/tooltip";
-import { Info } from "lucide-react";
 import CountrySelector from "@/components/ui/form/countrySelector";
 import CitySelector from "@/components/ui/form/citySelector";
 import LabeledInput from "@/components/ui/form/labeledInput";
@@ -45,7 +41,7 @@ export function MovilityDetailsSection({
     };
 
     return (
-        <div className="bg-gray-100 p-4 rounded-md">
+        <div className="p-4 rounded-md">
             <h2 className="text-2xl font-bold text-blue">Detalles de la movilidad</h2>
             <hr className="my-4 border-gray-300" />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
